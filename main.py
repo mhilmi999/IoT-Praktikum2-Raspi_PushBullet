@@ -14,11 +14,10 @@ while True:
     if i == 1 and before == 0:
         print "Arep udan, gek ndang balik entas o no jemuran Ibuk"
         before = i
+        dev = pb.get_device('Samsung SM-G985F')
+        push = dev.push_note("Alert!!", "Arep udan, gek ndang balik entas o no jemuran Ibuk")
         sleep(1)
     elif i == 0 and before == 1:
         print "Gorong udan, rung waktu e entas jemuran"
-        sleep(1)
         before = i
-        dev = pb.get_device('Samsung SM-G985F')
-        push = dev.push_note("Alert!!", "Someone is in your house")
-    
+        sleep(1)
