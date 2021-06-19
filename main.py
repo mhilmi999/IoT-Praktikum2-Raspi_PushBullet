@@ -5,12 +5,7 @@ GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BOARD)
 GPIO.setup(11, GPIO.IN) # input raindrop sensor 
 
-<<<<<<< HEAD
-pb = Pushbullet("hehehehehtokensiniya")
-=======
-
 pb = Pushbullet("o.FrAarM58juBkQIN8gj1u8YILbFGuUVCX")
->>>>>>> 134dfb1e015756ed2d605b55b86f5526176e43e4
 print(pb.devices)
 
 before = 1
