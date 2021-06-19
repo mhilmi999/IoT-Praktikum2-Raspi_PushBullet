@@ -2,7 +2,7 @@ from pushbullet import Pushbullet
 import RPi.GPIO as GPIO
 from time import sleep
 GPIO.setwarnings(False)
-GPIO.setmode(GPIO.BOARD)
+GPIO.setmode(GPIO.BCM)
 GPIO.setup(11, GPIO.IN) # input raindrop sensor 
 
 pb = Pushbullet("o.FrAarM58juBkQIN8gj1u8YILbFGuUVCX")
